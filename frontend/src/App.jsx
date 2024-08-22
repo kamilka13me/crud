@@ -6,10 +6,12 @@ import CreateMovieForm from "./components/CreateMovieForm";
 import Home from "./components/Home";
 import MovieDetails from "./components/MovieDetails";
 import EditMovie from "./components/EditMovie";
+import Navbar from "./components/Header";
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <div className="container mx-auto p-4">
         <Routes>
           <Route path="/login" element={<LoginForm />} />
